@@ -2,12 +2,12 @@ import React from "react";
 import Track from "./Track";
 
 function SearchResults(){
-    /* Should host a list of the tracks that matches the search results */
     return (
-        <div style={{ width: '50%', height: '100%' }}>
+        <div className="search-results">
             <Track  albumCover="../public/logo192.png" 
               trackName="Sample Track" 
               trackAuthor="Sample Author" 
+              trackAlbum="Sample Album"
               trackYear="Sample Year" />
         </div>
     )
