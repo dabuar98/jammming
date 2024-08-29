@@ -1,5 +1,6 @@
 import React from "react";
 import Track from "./Track";
+import "./SearchResults.css"
 
 function SearchResults(){
     return (

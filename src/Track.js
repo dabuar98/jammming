@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import './Track.css'
@@ -21,7 +21,7 @@ function Track(props){
                 <p>{trackYear}</p>
             </div>
             <button className="add-button" onClick={handleClick}><FontAwesomeIcon icon={faPlus}/></button>
-            </div>
+        </div>
     );
 }
 

@@ -8,12 +8,15 @@ function SearchBar () {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`The form has been submitted with search word: ${search}`)
+        alert(`The form has been submitted with search word: ${search}`);
+        setSearch("");
     }
 
     return(
         <form onSubmit={handleSubmit} className="search-bar">
-            <input value={search} onChange={({ target }) => setSearch(target.value)}></input>
+            <input  value={search} 
+                    onChange={({ target }) => setSearch(target.value)}
+                    placeholder="Search"></input>
             <button type="submit"><FontAwesomeIcon className="search-icon" icon={faSearch}/></button>
         </form>
     )
