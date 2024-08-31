@@ -33,3 +33,14 @@ header .spotify-icon {
     justify-content: space-around;
     margin-top: 20px;
 }
+
+@media only screen and (max-width: 480px){
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tracklist {
+        margin-top: 20px;
+    }
+}

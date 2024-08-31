@@ -19,8 +19,8 @@ function App() {
         <SearchBar />
 
         <div className='content'>
-          <SearchResults />
-          <Tracklist />
+          <SearchResults className="search-results"/>
+          <Tracklist className="tracklist"/>
         </div>
 
       </div>
