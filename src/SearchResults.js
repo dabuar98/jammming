@@ -2,15 +2,22 @@ import React from "react";
 import Track from "./Track";
 import "./SearchResults.css"
 
-function SearchResults(){
+function SearchResults({ tracks }){
     return (
-        <div className="search-results">
-            <Track  albumCover="../public/logo192.png" 
-              trackName="Sample Track" 
-              trackAuthor="Sample Author" 
-              trackAlbum="Sample Album"
-              trackYear="Sample Year" />
-        </div>
+        //albumCover, trackName, trackAuthor, trackAlbum, trackYear
+        <>
+            {tracks.map((track, index) => (
+                <Track
+                    key = {index}
+                    albumCover = {track.cover}
+                    trackName = {track.title}
+                    trackAuthor = {track.author}
+                    trackAlbum ={track.album}
+                    trackYear = {track.year}
+                />
+            ))}
+
+        </>
     )
 }
 
