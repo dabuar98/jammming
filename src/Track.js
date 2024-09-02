@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import './Track.css'
 
-function Track(props){
-
-    const { albumCover, trackName, trackAuthor, trackAlbum, trackYear } = props;
+function Track({ albumCover, trackName, trackAuthor, trackAlbum, trackYear }){
 
     const handleClick = () => {
         console.log("Add button clicked");

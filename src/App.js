@@ -5,10 +5,10 @@ import Tracklist from './Tracklist';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
 import './App.css'
+import data from './dummyData.json'
 
 function App() {
-  return (
-  
+  return ( 
       <div className="container">
 
         <header>
@@ -19,7 +19,7 @@ function App() {
         <SearchBar />
 
         <div className='content'>
-          <SearchResults className="search-results"/>
+          <SearchResults tracks={data.tracks} className="search-results"/>
           <Tracklist className="tracklist"/>
         </div>
 

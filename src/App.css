@@ -38,9 +38,15 @@ header .spotify-icon {
     .content {
         display: flex;
         flex-wrap: wrap;
+        width: 80%;
     }
 
-    .tracklist {
+    .search-results{
         margin-top: 20px;
+        width: inherit;
+    }
+
+    .tracklist{
+        width: inherit;
     }
 }
