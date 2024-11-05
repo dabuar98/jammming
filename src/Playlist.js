@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import "./Playlist.css"
 
-function Playlist({ playlistName, playlistTracks, onNameChange, handleNameChange }) {
+function Playlist({ playlistName, playlistTracks, onNameChange }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
         alert(`The form has been submitted with playlist name: ${playlistName}`);
-        handleNameChange("");
+        onNameChange("");
     }
 
     return (
         <div className="playlist">
         
-            <form className="playlist-name" onSubmit={handleSubmit}>
+            <form className="playlist-form" onSubmit={handleSubmit}>
                 <input  value={playlistName} 
                         placeholder="Name your playlist" 
                         onChange={({ target }) => onNameChange(target.value)}/>
