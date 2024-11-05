@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar'
 import SearchResults from './SearchResults';
-import Tracklist from './Tracklist';
+import Playlist from './Playlist';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
 import './App.css'
@@ -39,7 +39,11 @@ function App() {
             <SearchResults tracks={data.tracks} className="search-results"/>
           </div>
 
-          <Tracklist/>
+          <Playlist 
+            playlistName={playlistName}
+            playlistTracks={playlistTracks}
+            onNameChange={onNameChange}
+          />
 
         </div>
 
