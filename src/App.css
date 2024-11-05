@@ -34,19 +34,45 @@ header .spotify-icon {
     margin-top: 20px;
 }
 
+.search-list {
+    background-color: #333;
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.playlist {
+    background-color: #333;
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
 @media only screen and (max-width: 480px){
     .content {
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
     }
 
-    .search-results{
+    .search-list {
         margin-top: 20px;
+        margin-bottom: 50px;
         width: inherit;
     }
 
-    .tracklist{
+    .playlist{
         width: inherit;
+        
     }
 }
