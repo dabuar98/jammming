@@ -7,7 +7,7 @@ function SearchResults({ tracks }){
         //albumCover, trackName, trackAuthor, trackAlbum, trackYear
         <>
             {tracks.map((track, index) => (
-                <Track
+                <Track className={`track ${index}`}
                     key = {index}
                     albumCover = {track.cover}
                     trackName = {track.title}
