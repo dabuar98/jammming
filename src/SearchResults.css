@@ -4,3 +4,9 @@
     padding: 20px;
     border-radius: 10px;
 }
+
+.track {
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+}

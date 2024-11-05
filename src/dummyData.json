@@ -1,0 +1,35 @@
+{
+    "tracks" : [
+        {
+            "title" : "Track 1 Title",
+            "author" : "Author 1",
+            "cover" : "../public/logo192.png",
+            "year" : "2022",
+            "album" : "Album 1"
+        },
+
+        {
+            "title" : "Track 2 Title",
+            "author" : "Author 2",
+            "cover" : "../public/logo192.png",
+            "year" : "2023",
+            "album" : "Album 2"
+        }, 
+
+        {
+            "title" : "Track 3 Title",
+            "author" : "Author 3",
+            "cover" : "../public/logo192.png",
+            "year" : "2024",
+            "album" : "Album 3"
+        },
+
+        {
+            "title" : "Track 4 Title",
+            "author" : "Author 4",
+            "cover" : "../public/logo192.png",
+            "year" : "1998",
+            "album" : "Album 4"
+        }
+    ]
+}
