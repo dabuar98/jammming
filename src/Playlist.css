@@ -1,0 +1,21 @@
+.playlist-name {
+    margin-top: 20px;
+}
+
+.playlist-name input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.playlist-name button {
+    width: auto;
+    padding: 10px;
+    background-color: #1DB954;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
