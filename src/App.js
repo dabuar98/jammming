@@ -8,6 +8,21 @@ import './App.css'
 import data from './dummyData.json'
 
 function App() {
+
+  // Keep track of the playlist names and the playlists tracks
+  const [playlistName, setPlaylistName] = useState(null);
+  const [playlistTracks, setPlaylistTracks] = useState([]);
+
+  // Handler to update playlist name
+  const handleNameChange = (name) => setPlaylistName(name);
+
+  // Handler to add a track to the playlist
+  const addTrack = (track) => {
+    if(!playlistTracks.find((t) => t.id === track.id)) {
+      setPlaylistTracks([...playlistTracks, track]);
+    }
+  };
+
   return ( 
       <div className="container">
 
