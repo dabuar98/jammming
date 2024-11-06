@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Playlist.css"
+import Tracklist from "./Tracklist";
 
 function Playlist({ playlistName, playlistTracks, onNameChange }) {
 
@@ -18,6 +19,8 @@ function Playlist({ playlistName, playlistTracks, onNameChange }) {
                         onChange={({ target }) => onNameChange(target.value)}/>
                 <button className="add-playlist">Add</button>
             </form>
+
+            <Tracklist tracks={playlistTracks}/>
 
         </div>
     )
