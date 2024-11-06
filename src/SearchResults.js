@@ -1,22 +1,11 @@
 import React from "react";
-import Track from "./Track";
+import Tracklist from "./Tracklist";
 import "./SearchResults.css"
 
-function SearchResults({ tracks }){
+function SearchResults({ searchResults }){
     return (
-        //albumCover, trackName, trackAuthor, trackAlbum, trackYear
         <>
-            {tracks.map((track, index) => (
-                <Track className={`track ${index}`}
-                    key = {index}
-                    albumCover = {track.cover}
-                    trackName = {track.title}
-                    trackAuthor = {track.author}
-                    trackAlbum ={track.album}
-                    trackYear = {track.year}
-                />
-            ))}
-
+            <Tracklist tracks={searchResults}/>
         </>
     )
 }
