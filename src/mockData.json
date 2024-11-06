@@ -1,0 +1,41 @@
+{
+    "playlistName": "My Favorite Hits",
+    "playlistTracks": [
+      {
+        "id": 1,
+        "name": "Shape of You",
+        "artist": "Ed Sheeran",
+        "album": "÷ (Divide)",
+        "albumArtUrl": "https://via.placeholder.com/150/album-a.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Blinding Lights",
+        "artist": "The Weeknd",
+        "album": "After Hours",
+        "albumArtUrl": "https://via.placeholder.com/150/album-a.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Rolling in the Deep",
+        "artist": "Adele",
+        "album": "21",
+        "albumArtUrl": "https://via.placeholder.com/150/album-a.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Uptown Funk",
+        "artist": "Mark Ronson ft. Bruno Mars",
+        "album": "Uptown Special",
+        "albumArtUrl": "https://via.placeholder.com/150/album-a.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "albumArtUrl": "https://via.placeholder.com/150/album-a.jpg"
+      }
+    ]
+  }
+  
