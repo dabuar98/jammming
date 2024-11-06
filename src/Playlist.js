@@ -11,8 +11,9 @@ function Playlist({ playlistName, playlistTracks, onNameChange }) {
     }
 
     return (
+    
         <div className="playlist">
-        
+            <h2>Build your playlist!</h2>
             <form className="playlist-form" onSubmit={handleSubmit}>
                 <input  value={playlistName} 
                         placeholder="Name your playlist" 

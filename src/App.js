@@ -39,7 +39,8 @@ function App() {
 
         <div className='content'>
 
-          <div className='search-list'>
+          <div className='search-results'>
+            <h2>Search Results</h2>
             <SearchResults searchResults={searchResults}/>
           </div>
 
