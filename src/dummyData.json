@@ -1,35 +1,31 @@
-{
-    "tracks" : [
-        {
-            "title" : "Track 1 Title",
-            "author" : "Author 1",
-            "cover" : "../public/logo192.png",
-            "year" : "2022",
-            "album" : "Album 1"
-        },
-
-        {
-            "title" : "Track 2 Title",
-            "author" : "Author 2",
-            "cover" : "../public/logo192.png",
-            "year" : "2023",
-            "album" : "Album 2"
-        }, 
-
-        {
-            "title" : "Track 3 Title",
-            "author" : "Author 3",
-            "cover" : "../public/logo192.png",
-            "year" : "2024",
-            "album" : "Album 3"
-        },
-
-        {
-            "title" : "Track 4 Title",
-            "author" : "Author 4",
-            "cover" : "../public/logo192.png",
-            "year" : "1998",
-            "album" : "Album 4"
-        }
-    ]
-}
+[
+    {
+      "id": 1,
+      "name": "Song A",
+      "artist": "Artist A",
+      "album": "Album A",
+      "albumArtUrl": "https://via.placeholder.com/150/album-a.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Song B",
+      "artist": "Artist B",
+      "album": "Album B",
+      "albumArtUrl": "https://via.placeholder.com/150/album-b.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Song C",
+      "artist": "Artist C",
+      "album": "Album C",
+      "albumArtUrl": "https://via.placeholder.com/150/album-c.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Song D",
+      "artist": "Artist D",
+      "album": "Album D",
+      "albumArtUrl": "https://via.placeholder.com/150/album-d.jpg"
+    }
+]
+  
