@@ -1,27 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SearchBar from './SearchBar'
 import SearchResults from './SearchResults';
 import Playlist from './Playlist';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
 import './App.css'
-import data from './dummyData.json'
+import mockSearchResults from './mockSearchResults.json'
+import mockData from './mockData.json'
 
 function App() {
 
   // Keep track of the playlist names and the playlists tracks
-  const [playlistName, setPlaylistName] = useState(null);
-  const [playlistTracks, setPlaylistTracks] = useState([]);
+  const [playlistName, setPlaylistName] = useState(mockData.playlistName);
+  const [playlistTracks, setPlaylistTracks] = useState(mockData.playlistTracks);
+
+  // Keep track of the search results
+  const [searchResults, setSearchResults] = useState(mockData.playlistTracks);
 
   // Handler to update playlist name
   const handleNameChange = (name) => setPlaylistName(name);
 
   // Handler to add a track to the playlist
-  const addTrack = (track) => {
-    if(!playlistTracks.find((t) => t.id === track.id)) {
-      setPlaylistTracks([...playlistTracks, track]);
-    }
-  };
+  // const addTrack = (track) => {
+  //   if(!playlistTracks.find((t) => t.id === track.id)) {
+  //     setPlaylistTracks([...playlistTracks, track]);
+  //   }
+  //};
 
   return ( 
       <div className="container">
@@ -36,13 +40,13 @@ function App() {
         <div className='content'>
 
           <div className='search-list'>
-            <SearchResults tracks={data.tracks} className="search-results"/>
+            <SearchResults searchResults={searchResults}/>
           </div>
 
           <Playlist 
             playlistName={playlistName}
             playlistTracks={playlistTracks}
-            onNameChange={onNameChange}
+            onNameChange={handleNameChange}
           />
 
         </div>
