@@ -11,7 +11,7 @@ import mockData from './mockData.json'
 function App() {
 
   // Keep track of the playlist names and the playlists tracks
-  const [playlistName, setPlaylistName] = useState(mockData.playlistName);
+  const [playlistName, setPlaylistName] = useState("");
   const [playlistTracks, setPlaylistTracks] = useState(mockData.playlistTracks);
 
   // Keep track of the search results
