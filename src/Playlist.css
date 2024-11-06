@@ -1,3 +1,8 @@
+.playlist {
+    justify-content: center;
+    align-content: center;
+}
+
 .playlist-form {
     margin-top: 20px;
     display: flex;
