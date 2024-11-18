@@ -15,17 +15,17 @@ function App() {
   const [playlistTracks, setPlaylistTracks] = useState(mockData.playlistTracks);
 
   // Keep track of the search results
-  const [searchResults, setSearchResults] = useState(mockData.playlistTracks);
+  const [searchResults, setSearchResults] = useState(mockSearchResults);
 
   // Handler to update playlist name
   const handleNameChange = (name) => setPlaylistName(name);
 
   // Handler to add a track to the playlist
-  // const addTrack = (track) => {
-  //   if(!playlistTracks.find((t) => t.id === track.id)) {
-  //     setPlaylistTracks([...playlistTracks, track]);
-  //   }
-  //};
+  const addTrack = (track) => {
+    if(!playlistTracks.find((savedTrack) => savedTrack.id === track.id)) {
+      setPlaylistTracks([...playlistTracks, track]);
+    }
+  };
 
   return ( 
       <div className="container">
@@ -41,7 +41,7 @@ function App() {
 
           <div className='search-results'>
             <h2>Search Results</h2>
-            <SearchResults searchResults={searchResults}/>
+            <SearchResults searchResults={searchResults} onAdd={addTrack}/>
           </div>
 
           <Playlist 

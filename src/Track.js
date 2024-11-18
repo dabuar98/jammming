@@ -3,11 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import './Track.css'
 
-function Track({ track }){
-    
-    const addTrack = () => {
-        console.log("The add button was pressed!")
-    }
+function Track({ track,onAdd }){
 
     return (
         <div className="track">
@@ -17,7 +13,7 @@ function Track({ track }){
                 <p>{track.artist}</p>
                 <p>{track.album}</p>
             </div>
-            <button className="add-button" onClick={addTrack}><FontAwesomeIcon icon={faPlus}/></button>
+            <button className="add-button" onClick={()=>onAdd(track)}><FontAwesomeIcon icon={faPlus}/></button>
         </div>
     );
 }
