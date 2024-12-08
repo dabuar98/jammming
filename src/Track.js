@@ -9,7 +9,7 @@ function Track({ track,onAdd }){
         <div className="track">
             <img src={track.albumArtUrl} alt="Album Cover" />
             <div className="track-info">
-                <p>{track.name}</p>
+                <p className='track-name'>{track.name}</p>
                 <p>{track.artist}</p>
                 <p>{track.album}</p>
             </div>

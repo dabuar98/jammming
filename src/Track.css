@@ -1,12 +1,13 @@
 .track {
+    width: inherit;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #444;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     border-radius: 5px;
 }
 
@@ -14,6 +15,11 @@
     width: 50px;
     height: 50px;
     border-radius: 5px;
+}
+
+.track-name {
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .track-info {

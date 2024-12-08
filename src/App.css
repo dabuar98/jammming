@@ -6,7 +6,9 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: auto;
     text-align: center;
 }
@@ -30,37 +32,41 @@ header .spotify-icon {
 
 .content {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: stretch;
     margin-top: 20px;
 }
 
 .search-results {
     background-color: #333;
     border-radius: 10px;
-    width: 40%;
+    width: 35%;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
+    text-align: center;
 }
 
 .playlist {
     background-color: #333;
     border-radius: 10px;
-    width: 40%;
+    width: 35%;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
+    text-align: center;
 }
 
 @media only screen and (max-width: 480px){
     .content {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        flex-direction: column;
         justify-content: center;
         align-content: center;
     }
