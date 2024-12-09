@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Playlist.css"
 import Tracklist from "./Tracklist";
 
-function Playlist({ playlistName, playlistTracks, onNameChange }) {
+function Playlist({ playlistName, playlistTracks, onRemove, onNameChange }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -21,7 +21,11 @@ function Playlist({ playlistName, playlistTracks, onNameChange }) {
                 <button className="add-playlist">Add</button>
             </form>
 
-            <Tracklist tracks={playlistTracks}/>
+            {playlistTracks.length === 0 ? (
+                <p>Your playlist is empty. Click "+" to add some tracks!</p>
+            ): (
+                <Tracklist tracks={playlistTracks} onRemove={onRemove} />
+            )}
 
         </div>
     )

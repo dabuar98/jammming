@@ -27,6 +27,11 @@ function App() {
     }
   };
 
+  // Handler to remove a track from the playlist
+  const removeTrack = (track) => {
+    setPlaylistTracks(playlistTracks.filter((savedTrack) => savedTrack.id !== track.id));
+  }
+
   return ( 
       <div className="container">
 
@@ -46,6 +51,7 @@ function App() {
           <Playlist
             playlistName={playlistName}
             playlistTracks={playlistTracks}
+            onRemove = {removeTrack}
             onNameChange={handleNameChange}
           />
 

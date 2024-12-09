@@ -39,3 +39,11 @@
     border-radius: 10%;
     cursor: pointer;
 }
+
+.remove-button {
+    background-color: #666;
+    border: none;
+    padding: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
