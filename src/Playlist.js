@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import "./Playlist.css"
 import Tracklist from "./Tracklist";
 
-function Playlist({ playlistName, playlistTracks, onRemove, onNameChange }) {
+function Playlist({ playlistName, playlistTracks, onRemove, onNameChange, onSave }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert(`The form has been submitted with playlist name: ${playlistName}`);
-        onNameChange("");
+        onSave();
     }
 
     return (
@@ -20,6 +19,8 @@ function Playlist({ playlistName, playlistTracks, onRemove, onNameChange }) {
                         onChange={({ target }) => onNameChange(target.value)}/>
                 <button className="add-playlist">Add</button>
             </form>
+
+            <h3>{playlistName}</h3>
 
             {playlistTracks.length === 0 ? (
                 <p>Your playlist is empty. Click "+" to add some tracks!</p>

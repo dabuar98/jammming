@@ -17,9 +17,6 @@ function App() {
   // Keep track of the search results
   const [searchResults, setSearchResults] = useState(mockSearchResults);
 
-  // Handler to update playlist name
-  const handleNameChange = (name) => setPlaylistName(name);
-
   // Handler to add a track to the playlist
   const addTrack = (track) => {
     if(!playlistTracks.find((savedTrack) => savedTrack.id === track.id)) {
@@ -30,6 +27,21 @@ function App() {
   // Handler to remove a track from the playlist
   const removeTrack = (track) => {
     setPlaylistTracks(playlistTracks.filter((savedTrack) => savedTrack.id !== track.id));
+  }
+
+  // Handler to save playlist
+  const savePlaylist = () => {
+    
+    // Extract URIs from playlistTracks
+    const trackUris = playlistTracks.map((track) => track.uri);
+
+    // Save to Spotify
+    console.log(`Saving playlist ${playlistName}`);
+    console.log(`Tracks:`, trackUris);
+
+    // Reset playlist
+    setPlaylistName("");
+    setPlaylistTracks([]);
   }
 
   return ( 
@@ -52,7 +64,8 @@ function App() {
             playlistName={playlistName}
             playlistTracks={playlistTracks}
             onRemove = {removeTrack}
-            onNameChange={handleNameChange}
+            onNameChange={setPlaylistName}
+            onSave={savePlaylist}
           />
 
         </div>

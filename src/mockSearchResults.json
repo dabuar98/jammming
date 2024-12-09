@@ -4,28 +4,32 @@
       "name": "Song A",
       "artist": "Artist A",
       "album": "Album A",
-      "albumArtUrl": "https://via.placeholder.com/150/album-a.jpg"
+      "albumArtUrl": "https://via.placeholder.com/150/album-a.jpg",
+      "uri": "spotify:track:1"
     },
     {
       "id": 2,
       "name": "Song B",
       "artist": "Artist B",
       "album": "Album B",
-      "albumArtUrl": "https://via.placeholder.com/150/album-b.jpg"
+      "albumArtUrl": "https://via.placeholder.com/150/album-b.jpg",
+      "uri": "spotify:track:2"
     },
     {
       "id": 3,
       "name": "Song C",
       "artist": "Artist C",
       "album": "Album C",
-      "albumArtUrl": "https://via.placeholder.com/150/album-c.jpg"
+      "albumArtUrl": "https://via.placeholder.com/150/album-c.jpg",
+      "uri": "spotify:track:3"
     },
     {
       "id": 40,
       "name": "Song D",
       "artist": "Artist D",
       "album": "Album D",
-      "albumArtUrl": "https://via.placeholder.com/150/album-d.jpg"
+      "albumArtUrl": "https://via.placeholder.com/150/album-d.jpg",
+      "uri": "spotify:track:40"
     }
 ]
   
